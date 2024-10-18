@@ -1,0 +1,589 @@
+*{
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth; 
+}
+:root{
+	--bg-color: white;
+	--text-color: #F5F5F5;
+	--second-color: #E9BD8C;
+	--main-color: #933C24;
+	--big-font: 4.5rem;
+	--h2-font: 3rem;
+	--p-font: 1.1rem;
+}
+body{
+    background:transparent;
+    color:#E9BD8C ;
+     font-size: 16px;
+}
+body a{
+    color: white;
+}
+ .header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+} 
+.logo{
+    
+    width: 80px;
+    height: auto;
+
+}
+.navbar{
+    display:flex;
+    padding: 20px 50px;
+    align-items: center;
+}
+.navbar a{
+    color:white;
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 10px 50px 0 0;
+    border-radius: 4px;
+    transition: ease .40s;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar a:hover{
+    background: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+}
+section{
+    padding: 80px 18%;
+}
+.home{
+    
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    background: url(../img-brief-2/backg-home.png);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+.home-btn1{
+    display: inline-block;
+    font-size: 24px;
+    padding: 15px 30px;
+    background: #933C24;
+    color: var(--main-color);
+    border-radius: 4px;
+    transition: ease .40s;
+    font-family:'semi bold','inter';
+}
+.home-btn1:hover{
+    background-color:black;}
+.home-btn2{
+    display: inline-block;
+    font-size: 24px;
+    padding: 15px 30px;
+    background: transparent;
+    color: var(--second-color);
+    border-radius: 4px;
+    transition: ease .40s;
+}
+
+.home-btn:hover{
+    background: var(--bg-color);
+    transform: scale(1.1);
+}
+.home-text h3{
+    font-family:'semi Bold','Inter';
+    font: size 24px;
+    color: #E9BD8C;
+    margin-top: 150px;
+    font-weight: 600;
+    
+}
+.home-text p{
+    font-family:'regular','Sansita swashed';
+    font-size: 74px;
+    color:#F5F5F5;
+}
+#contact{
+    background-image:  url(../img-brief-2/FOOTER\ BACKROUND.png);
+    height:633px; 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    margin: 0;
+    position: relative;
+}
+
+.footer{ 
+    height:633px; 
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    margin: 0;
+    position: relative;
+}
+hr{
+    border: none;
+    background-color: #E9BD8C;
+    border-bottom: 0.5px solid;
+}
+#folow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.list{
+    width: 25%;
+
+}
+.list li{
+    list-style-type: none;
+
+}
+.list a{
+    color:white;
+} 
+.list p{
+    font-size: 21px;
+    color: white;
+    margin-bottom: 30px;
+    position: relative;
+}
+.list h4{
+    font-size: 21px;
+    color: var(--bg-color);
+    margin-bottom: 30px;
+    position: relative;
+}
+.list h4::before{
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    left: 0;
+    bottom: -10px;
+    background: var(--bg-color);
+}
+.list ul li:not(:last-child) {
+    margin-bottom: 16px;
+}
+.list ul li a{
+    color: #ffffffbf;
+    font-size: var(--p-font);
+    display: flex;
+    transition: .3s;
+}
+.list ul li a:hover{
+    color: var(--bg-color);
+    transform: translateX(14px);
+}
+.list p{
+    font-size: 21px;
+    color: white;
+    margin-bottom: 30px;
+    position: relative;
+}
+.end-text{
+    text-align: center;
+    padding-top: 90px;
+}
+.end-text p{
+    color: var(--bg-color);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+/* css pour contact  */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Bar */
+.navbarcontact {
+    display: flex;
+    align-items: center;
+    background-image: url(../img-brief-2/back-nav-about.png); 
+    height: 98px; 
+    padding: 0 20px;
+    background-size: cover;
+}
+.navbarcontact .logo{
+    margin-right: auto;
+}
+
+.logocontact img {
+    height: 60px; 
+    margin-right: 20px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    margin:0;
+    padding: 0;
+    gap: 20px;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Contact Section */
+.contact-section {
+     background-image:  url(../img-brief-2/backroud\ patisserie\ 2\ 2.png); 
+    background-size: cover;
+    height: 1840px; 
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+.contact-section h1 {
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.contact-section p {
+    font-size: 36px; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; 
+    margin-top: 50px;
+}
+.contact-form-box {
+    background-color:transparent;
+    border: 2px solid #E9BD8C; 
+    padding: 30px;
+    max-width: 618px;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 700px;
+    margin-top: 100px;
+}
+.contact-form h2 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    background-color:transparent;
+    max-width: 544px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+.footercontact {
+    background:  url(../img-brief-2/FOOTER\ BACKROUND.png);
+    color: white;
+    height: 633px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-logo img {
+    height: 100px;
+}
+
+.footer-info,
+.footer-explore,
+.footer-news {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.footer-explore ul,
+.footer-news ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-explore ul li,
+.footer-news ul li {
+    margin-bottom: 10px;
+}
+
+.footer-explore ul li a,
+.footer-news ul li a {
+    text-decoration: none;
+    color: white;
+}
+.about-section {
+    background:  url(../img-brief-2/aboutback.png);
+    background-size: cover;
+    background-position: center;
+    height: 454px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.about-content {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-section h1 {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 48px;
+    margin: 0;
+}
+
+.about-section p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+ .about-content a {
+    display: inline-block;
+    font-size: 24px;
+    padding: 15px 30px;
+    background: #933C24;
+    color: var(--main-color);
+    border-radius: 4px;
+    transition: ease .40s;
+    font-family:'semi bold','inter';
+}
+
+
+/* Section 2: Sweet Treats */
+.treats-section {
+    background:  url(../img-brief-2/backroud\ patisserie\ 2\ 2.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+    height: 1799px;
+
+}
+
+.treats-section h2 {
+    font-family: 'Sansita Swashed', 'cursive';
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.treats-section p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+/* css page de menu */
+.title-page{
+	text-align: center;
+	margin: 50px auto 0;
+	padding: 10px;
+}
+.title-page h2{
+align-items: center;
+justify-content: center;
+font-size: 48px;
+font-weight: 600;
+font-family: Sansita Swashed;
+}
+.package-content{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+	align-items: center;
+	margin-top: 1rem;
+
+}
+
+.thum {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.thum:hover{
+
+	transform: scale(1.04);
+}
+
+.thum img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.thum:hover .product-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.thum:hover img {
+    transform: scale(1.1);
+}
+
+.thum h4 {
+    color: white;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+}
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.product-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin-top: 180px;
+	margin-bottom: 10px;
+}
+.product-top a svg {
+    transition: transform 0.3s ease; 
+}
+
+.product-top a:hover svg {
+    transform: scale(1.2); 
+}
+
+.product-top h3 {
+    margin: 0;
+    color: var(--bg-color);
+	font-family: inter;
+}
+/* style for the featured text */
+.legende-pastry{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin-top: 0;
+}
+
+.legende-pastry h3 {
+    margin: 0;
+	margin-top: 10px;
+    color: black;
+	font-family: inter;
+}
+.add-btn {
+    align-self: flex-end;
+    padding: 10px 20px;
+    background-color:#933C24;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: var(--main-color);
+    transform: scale(1.05);
+}
+.homebtn-shop,
+.homebtn-learn {
+    font-size: 16px; 
+    padding: 15px 30px;
+    border-radius: 4px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+.homebtn-shop{
+	background: #933C24;
+	color: white;
+}
+.homebtn-shop:hover{
+    font-size: 18px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+	background: #933C24;
+    transform: translateY(-2px); 
+}
+/* css menu page reduction */
+.subhome{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background:  url(../img-brief-2/section\ 2\ menu.png);
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	align-items: center;
+	text-align: center;
+	margin-top: 0;
+}
+.subhome-text h1{
+	font-size: 3.5rem;
+	line-height: 1.8;
+	color: #933C24;
+	font-family: Sansita Swashed;
+	letter-spacing: 4px;
+	margin-bottom: 200px;
+}
+/* css menu page cake  */
+.menubar{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.menubar a{
+	color: #5D5D5D;
+	font-family: poppins;
+	font-size: var(--p-font);
+	font-weight: 600;
+	padding: 10px 40px;
+}
+.menubar a:hover{
+	color: var(--second-color);
+}
+.line {
+	border-bottom: 5px solid #933C24;
+}
